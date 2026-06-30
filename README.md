@@ -1,24 +1,29 @@
-# Iris Flower Classifier AI Project
+# Iris Classifier (Decision Tree)
 
-This repository contains a complete machine learning pipeline to classify Iris flower species using Python and Scikit-Learn.
+## Overview
+End-to-end ML example from Digital Marketing Mastery Module → builds a decision-tree classifier on the classic Iris dataset using scikit-learn.
 
-## 🚀 Project Overview
-- **Model Type:** Random Forest Classifier
-- **Dataset:** Iris Flower Dataset (Sepal/Petal lengths and widths)
-- **Target Accuracy:** 100% (1.0000) on Test Split
+## Quick start
+```bash
+git clone https://github.com
+cd iris-classifier
+python -m venv venv && source venv/bin/activate
+pip install -r requirements.txt
+python src/train.py --test-size 0.2 --random-state 42
+```
 
-## 📁 Repository Structure
-- `src/train.py`: Reproducible Python script to train and save the model.
-- `iris_model.ipynb`: Jupyter Notebook used for initial data exploration.
-- `requirements.txt`: List of dependencies needed to build the workspace.
-- `outputs/`: Directory holding our trained model binary (`iris_model.pkl`).
-
-## 🛠️ Setup Instructions
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Train the model:
-   ```bash
-   python src/train.py
-   ```
+## Project Structure
+```text
+iris-classifier/
+├── data/ # (empty - Iris is loaded from scikit-learn)
+├── notebooks/
+│   └── iris_model.ipynb # walk-through notebook
+├── src/
+│   └── train.py # reproducible CLI script
+├── tests/
+│   └── test_train.py # basic pytest
+├── outputs/ # created automatically (model & figures)
+├── .gitignore
+├── LICENSE
+└── requirements.txt
+```
