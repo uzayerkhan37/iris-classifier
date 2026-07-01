@@ -19,3 +19,11 @@ env/
 *.onnx
 outputs/
 data/
+# Block binary models, but allow the specific feedback matrix image
+*.joblib
+*.pkl
+
+# Allow the outputs folder but ignore local checkpoints
+venv/
+.ipynb_checkpoints/
+__pycache__/
